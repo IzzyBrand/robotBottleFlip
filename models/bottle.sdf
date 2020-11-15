@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="bottle">
+    <link name="base_link">
+      <inertial>
+        <pose>0 0 0.075 0 0 0 </pose>
+        <mass>0.5</mass>
+        <!-- calculated using moment of inertia for uniform cylinder -->
+        <inertia>
+          <ixx>0.00105</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00105</iyy>
+          <iyz>0</iyz>
+          <izz>0.000225</izz>
+        </inertia>
+      </inertial>
+
+      <visual name="cylinder_visual">
+        <pose>0 0 0.075 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.03</radius>
+            <length>0.15</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.6 0.6 0.8 0.8</diffuse>
+        </material>
+      </visual>
+
+      <collision name="cylinder_collision">
+        <pose>0 0 0.075 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.03</radius>
+            <length>0.15</length>
+          </cylinder>
+        </geometry>
+        <!-- <material>
+          <diffuse>0 1 0 1.0</diffuse>
+        </material> -->
+      </collision>
+
+    </link>
+  </model>
+</sdf>
