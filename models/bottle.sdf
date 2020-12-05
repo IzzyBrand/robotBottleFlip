@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <sdf version="1.7">
   <model name="bottle">
-    <link name="base_link">
+    <link name="bottle_base_link">
       <inertial>
         <pose>0 0 0.075 0 0 0 </pose>
         <mass>0.5</mass> <!-- half liter of water -->
