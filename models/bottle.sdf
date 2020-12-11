@@ -3,7 +3,7 @@
   <model name="bottle">
     <link name="bottle_base_link">
       <inertial>
-        <pose>0 0 0.075 0 0 0 </pose>
+        <pose>0 0 0.03 0 0 0 </pose>
         <mass>0.5</mass> <!-- half liter of water -->
         <!-- calculated using moment of inertia for uniform cylinder -->
         <inertia>
